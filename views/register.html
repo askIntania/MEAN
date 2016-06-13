@@ -1,7 +1,27 @@
 
     <%include header.html %>  
-    <div class="container">
-      <h1>Register</h1>      
+    <style>
+        form{              
+            max-width: 240px;
+            margin: 0 auto;
+        }
+        input{
+            margin-bottom: 15px;
+        }
+    </style>
+    
+    <div class="container">        
+        <form method='post' enctype="multipart/form-data">
+            <h1>Register</h1>
+            <input name='fullname' placeholder="Full name"
+                class='form-control'>
+            <input name='email' placeholder="Email"
+                class='form-control'>
+            <input name='password' placeholder="Password" type="password"
+                class='form-control'>
+            <button type="submit" 
+                class='btn btn-primary'> Register </button>
+        </form>       
     </div> 
     <%include footer.html %>
     
